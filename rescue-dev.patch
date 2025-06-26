@@ -1,0 +1,11 @@
+--- /usr/lib/python3.6/site-packages/nova/virt/libvirt/driver.py.orig	2025-06-19 20:21:29.272413356 +0300
++++ /usr/lib/python3.6/site-packages/nova/virt/libvirt/driver.py	2025-06-19 20:22:18.298509862 +0300
+@@ -5708,7 +5708,7 @@
+                     self._connect_volume(context, connection_info, instance)
+ 
+                     disk_info = {'bus': 'scsi',
+-                                 'dev': 'sdb',
++                                 'dev': 'sdc',
+                                  'type': 'disk'}
+                     cfg = self._get_volume_config(
+                         instance, connection_info, disk_info)
